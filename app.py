@@ -11,13 +11,7 @@ from io import BytesIO
 import sys
 import pubchempy as pcp
 import openai
-import logging
-from PIL import Image, ImageEnhance
-import time
-import json
-import requests
-import base64
-from openai import OpenAI, OpenAIError
+
 
 # Configuración de la barra lateral
 st.sidebar.image("ima.webp") #, caption="Autores:  -Guadalupe Enriquez -Dr.Jesus Alvarado"
