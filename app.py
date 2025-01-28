@@ -42,6 +42,29 @@ def Home():
      st.markdown("### IUPAC")  
     nombreiupac = pcp.get_compounds(entrada,'name')
     st.text(nombreiupac[0].iupac_name)
+    st.markdown("### SMILES Isomérico")
+    smilesisomerico = get_compounds(entrada, 'name')
+    st.text(smilesisomerico[0].isomeric_smiles)
+
+    st.markdown("### Masa molecular (g/mol)")
+    masamolecular = get_compounds(entrada, 'name')
+    st.text(masamolecular[0].exact_mass)
+  
+    st.markdown("### Coeficiente de partición")
+    coeficientedeparticion = get_compounds(entrada, 'name')
+    st.text(coeficientedeparticion[0].xlogp)
+
+    st.markdown("### PubChem ID")
+    id_pubchem = pcp.get_compounds(entrada, 'name')
+    st.text(id_pubchem)
+
+    st.markdown("### Representación simplificada")
+    m0 = Chem.MolFromSmiles(smilesisomerico[0].isomeric_smiles)    
+    Draw.MolToFile(m0,'mol0.png')
+    #st.pyplot()
+    st.write('Molecule 2D :smiley:')
+    st.image('mol0.png')
+
 
 # Generar archivo SDF
 def generate_sdf(mol):
