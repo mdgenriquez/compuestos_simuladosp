@@ -11,7 +11,7 @@ from io import BytesIO
 # Configuración de la barra lateral
 st.sidebar.image("ima.webp")  # Cambia la ruta de la imagen según corresponda
 st.sidebar.markdown("""
-    <h1 style='color:green; font-size: 25px;'>COMPUESTOS SIMULADOS</h1>
+    <h1 style='color:green; font-size: 24px;'>COMPUESTOS SIMULADOS</h1>
 """, unsafe_allow_html=True)
 st.sidebar.image("ima2.webp")
 st.sidebar.markdown("Autores:\n- Dr. Jesus Alvarado\n- Bach. Guadalupe Enriquez")
