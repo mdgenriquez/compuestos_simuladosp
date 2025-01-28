@@ -19,7 +19,7 @@ st.sidebar.markdown("""
     <h1 style='color:green; font-size: 24px;'>COMPUESTOS SIMULADOS</h1>
 """, unsafe_allow_html=True)
 st.sidebar.markdown("Autores:\n- Dr. Jesus Alvarado\n- Bach. Guadalupe Enriquez")
-st.sidebar.image("ima.webp") 
+st.sidebar.image("ima2.webp") 
 
 #title probando
 
