@@ -6,6 +6,8 @@ from rdkit.Chem import Draw
 from rdkit.Chem import AllChem
 import py3Dmol
 from stmol import showmol
+import sys
+import pubchempy as pcp
 from io import BytesIO
 
 # Configuración de la barra lateral
