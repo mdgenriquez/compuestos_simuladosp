@@ -15,6 +15,6 @@ import pubchempy as pcp
 st.sidebar.image("ima.webp") #, caption="Autor: -Dr.Jesus Alvarado 
 -Guadalupe Enriquez"
 st.sidebar.title("COMPUESTOS SIMULADOS")
-st.sidebar.markdown("Autor: -Dr.Jesus Alvarado -Guadalupe Enriquez")
+st.sidebar.markdown("Autor: -Dr. Jesus Alvarado -Guadalupe Enriquez")
 
 
