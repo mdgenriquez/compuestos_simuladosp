@@ -39,6 +39,10 @@ def Home():
 
     entrada = st.text_input("Escribe el nombre común en inglés:", "Aluminium hydroxide")
 
+     st.markdown("### IUPAC")  
+    nombreiupac = pcp.get_compounds(entrada,'name')
+    st.text(nombreiupac[0].iupac_name)
+
 # Generar archivo SDF
 def generate_sdf(mol):
     """Genera un archivo SDF 3D de la molécula dada."""
