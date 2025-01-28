@@ -39,7 +39,7 @@ def Home():
 
     entrada = st.text_input("Escribe el nombre común en inglés:", "Aluminium hydroxide")
 
-     st.markdown("### IUPAC")  
+    st.markdown("IUPAC")  
     nombreiupac = pcp.get_compounds(entrada,'name')
     st.text(nombreiupac[0].iupac_name)
     st.markdown("### SMILES Isomérico")
