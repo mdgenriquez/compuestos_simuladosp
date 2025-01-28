@@ -66,6 +66,26 @@ def Home():
     st.image('mol0.png')
 
 
+def page2():
+    st.header('De SMILES a 2D :smiley:', divider='rainbow')
+    st.sidebar.markdown("# Simplified Molecular Input Line Entry System")
+    st.sidebar.markdown("Sistema de introducción molecular lineal simplificada")
+    
+    entrada = st.text_input("Escribe el nombre SMILES: ", "C1=CC2=C(C3=C(C=CC=N3)C=C2)N=C1")
+    st.markdown("### PubChem ID:")
+    identificador = pcp.get_compounds(entrada, 'smiles')
+    st.text(identificador)
+
+    st.markdown("### Nombre IUPAC")  
+    nombreiupac = pcp.get_compounds(entrada,'smiles')
+    st.text(nombreiupac[0].iupac_name)
+
+    st.markdown("### Representación simplificada")
+    m1 = Chem.MolFromSmiles(entrada)    
+    Draw.MolToFile(m1,'mol1.png')
+    st.write('Molecule 2D :smiley:')
+    st.image('mol1.png')
+
 # Generar archivo SDF
 def generate_sdf(mol):
     """Genera un archivo SDF 3D de la molécula dada."""
