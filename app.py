@@ -31,6 +31,14 @@ def load_data(file_path):
         st.error(f"Error al cargar el archivo CSV: {e}")
         return None
 
+#práctica
+def Home():
+    st.header('De nombre común a 2D :cat:', divider='rainbow')
+    st.sidebar.markdown("# Nombre clásico:")
+    st.sidebar.markdown("Trivial name, non-systematic name for a chemical substance, son otras denominaciones en inglés")
+
+    entrada = st.text_input("Escribe el nombre común en inglés:", "Aluminium hydroxide")
+
 # Generar archivo SDF
 def generate_sdf(mol):
     """Genera un archivo SDF 3D de la molécula dada."""
