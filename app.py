@@ -18,7 +18,7 @@ st.sidebar.image("ima.webp") #, caption="Autores:  -Guadalupe Enriquez -Dr.Jesus
 st.sidebar.markdown("""
     <h1 style='color:green; font-size: 24px;'>COMPUESTOS SIMULADOS</h1>
 """, unsafe_allow_html=True)
-st.sidebar.markdown("Autor:\n- Dr. Jesus Alvarado\n- Bach. Guadalupe Enriquez")
+st.sidebar.markdown("Autores:\n- Dr. Jesus Alvarado\n- Bach. Guadalupe Enriquez")
 
 #title probando
 
