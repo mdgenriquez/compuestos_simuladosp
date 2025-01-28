@@ -10,7 +10,7 @@ from stmol import showmol
 from io import BytesIO
 import sys
 import pubchempy as pcp
-import openai
+
 
 
 # Configuración de la barra lateral
