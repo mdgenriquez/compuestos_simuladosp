@@ -47,7 +47,7 @@ if data is not None:
     if "SMILES" not in data.columns or "Name" not in data.columns:
         st.error("El archivo CSV debe contener las columnas 'SMILES' y 'Name'.")
     else:
-        st.title("Predictor de Plantas Medicinales")
+        st.title("COMPUESTOS SIMULADOS")
 
         # Barra de búsqueda
         search_query = st.text_input("Buscar molécula por nombre:")
