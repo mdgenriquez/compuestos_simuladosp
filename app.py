@@ -21,17 +21,7 @@ st.sidebar.markdown("""
 st.sidebar.markdown("Autor:\n- Dr. Jesus Alvarado\n- Bach. Guadalupe Enriquez")
 
 #title probando
-# Streamlit Title
-st.title("Streamly Streamlit Assistant")
 
-def ima.webp(image_path):
-    """Convert image to ima.webp."""
-    try:
-        with open(image_path, "rb") as img_file:
-            return base64.b64encode(img_file.read()).decode()
-    except Exception as e:
-        logging.error(f"Error converting image to base64: {str(e)}")
-        return None
         
 def load_data(file_path):
     
