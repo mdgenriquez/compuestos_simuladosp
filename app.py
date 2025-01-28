@@ -11,3 +11,9 @@ from io import BytesIO
 import sys
 import pubchempy as pcp
 
+# Configuración de la barra lateral
+st.sidebar.image("plant.jpg") #, caption="Autor: -Dr.Jesus Alvarado -Guadalupe Enriquez"
+st.sidebar.title("COMPUESTOS SIMULADOS")
+st.sidebar.markdown("Autor: -Dr.Jesus Alvarado -Guadalupe Enriquez")
+
+
