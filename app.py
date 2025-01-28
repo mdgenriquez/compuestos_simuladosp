@@ -57,6 +57,9 @@ if data is not None:
         st.error("El archivo CSV debe contener las columnas 'SMILES' y 'Name'.")
     else:
         st.title("Predictor plant")
+        st.sidebar.markdown("""
+    <h1 style='color:green; font-size: 24px;'>Predictor plant</h1>
+""", unsafe_allow_html=True)
         
         # Mostrar un slider para seleccionar una molécula
         molecule_index = st.slider("Selecciona una molécula", 0, len(data) - 1, 0)
