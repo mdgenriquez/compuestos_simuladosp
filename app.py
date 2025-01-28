@@ -127,6 +127,14 @@ def page3():
     #botón de descarga 
     with open('mol3d.mol', 'rb') as f:
       st.download_button('Descargar 3D (en formato MOL)', f, file_name='mol3d.mol', mime='chemical/x-mdl-molfile')
+        page_names_to_funcs = {
+  "Nombre común a 2D": Home,
+  "SMILES a 2D": page2,
+  "Vista 3D": page3,
+}
+
+selected_page = st.sidebar.selectbox("Tipo de operación", page_names_to_funcs.keys())
+page_names_to_funcs[selected_page]()
 
 ################################################################### 
 ##########################Configuracion############################    
