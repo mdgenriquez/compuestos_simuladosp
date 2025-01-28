@@ -56,7 +56,7 @@ if data is not None:
         
         if search_query:
             # Filtrar datos según la búsqueda
-            filtered_data = data[data["Name"].str.contains(search_query, case=False, na=False)]
+            filtered_data = data[data["ccc"].str.contains(search_query, case=False, na=False)]
         else:
             filtered_data = data
 
