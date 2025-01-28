@@ -14,6 +14,6 @@ import pubchempy as pcp
 # Configuración de la barra lateral
 st.sidebar.image("ima.webp") #, caption="Autor: -Dr.Jesus Alvarado -Guadalupe Enriquez"
 st.sidebar.markdown("""
-    <h1 style='color:lead; font-size: 24px;'>COMPUESTOS SIMULADOS</h1>
+    <h1 style='color:blue; font-size: 24px;'>COMPUESTOS SIMULADOS</h1>
 """, unsafe_allow_html=True)
 st.sidebar.markdown("Autor:\n- Dr. Jesus Alvarado\n- Bach. Guadalupe Enriquez")
